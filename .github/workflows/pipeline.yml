@@ -50,7 +50,7 @@ jobs:
           cache: 'npm'
       - name: installing NPM 
         run: npm install
-      - name: installing Playwritght Browsers
-        run: npm playwright install --with deps
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
       - name: Running Ui Tests 
         run: npm run test:ui
